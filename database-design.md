@@ -119,6 +119,11 @@ updated_at       TIMESTAMP
 60
 ```
 
+Database integrity rules:
+
+- `start_time` must be earlier than `end_time`.
+- `slot_duration` must be one of `15`, `30`, `45`, or `60`.
+
 Example:
 
 ```text
@@ -172,6 +177,12 @@ start_time = 10:00
 end_time   = 12:00
 ```
 
+Database integrity rules:
+
+- Whole-day exceptions require both `start_time` and `end_time` to be `NULL`.
+- Partial-day exceptions require both times to be provided.
+- For partial-day exceptions, `start_time` must be earlier than `end_time`.
+
 ## 9. Appointments
 
 ```text
@@ -198,6 +209,11 @@ CANCELLED
 COMPLETED
 ```
 
+Database integrity rules:
+
+- `start_time` must be earlier than `end_time`.
+- `PENDING` and `CONFIRMED` appointments cannot overlap for the same faculty member.
+
 Relationships:
 
 ```text
@@ -218,7 +234,7 @@ CONFIRMED
 
 The database must enforce this rule so that concurrent requests cannot create conflicting appointments.
 
-The implementation will use PostgreSQL constraints/indexing appropriate for time-range conflict protection.
+The implementation uses a PostgreSQL GiST exclusion constraint with a half-open time range `[start_time, end_time)`.
 
 Appointment creation and state changes must use database transactions where required.
 
