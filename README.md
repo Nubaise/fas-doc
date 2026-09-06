@@ -68,6 +68,11 @@ FAS is a web-based system that allows students to request appointments with facu
 - [Database Design](database-design.md)
 - [Phase 4 — Backend Foundation](phase-4-backend-foundation.md)
 - [Phase 5 — Authentication & Authorization](phase-5-authentication-authorization.md)
+- [Phase 6 — Faculty & Department Management](phase-6-faculty-department-management.md)
+- [Phase 7 — Availability & Slot System](phase-7-availability-slot-system.md)
+- [Phase 8 — Appointment Booking](phase-8-appointment-booking.md)
+- [Phase 9 — Appointment Lifecycle](phase-9-appointment-lifecycle.md)
+- [Phase 10 — Notifications & Background Jobs](phase-10-notifications-background-jobs.md)
 
 ## Project Principles
 
