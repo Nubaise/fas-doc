@@ -66,6 +66,8 @@ FAS is a web-based system that allows students to request appointments with facu
 - [Requirements](requirements.md)
 - [Architecture](architecture.md)
 - [Database Design](database-design.md)
+- [Phase 4 — Backend Foundation](phase-4-backend-foundation.md)
+- [Phase 5 — Authentication & Authorization](phase-5-authentication-authorization.md)
 
 ## Project Principles
 
