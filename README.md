@@ -1,4 +1,4 @@
-# FAS — Faculty Appointment System
+﻿# FAS — Faculty Appointment System
 
 Documentation repository for the Faculty Appointment System (FAS).
 
@@ -74,6 +74,7 @@ FAS is a web-based system that allows students to request appointments with facu
 - [Phase 9 — Appointment Lifecycle](phase-9-appointment-lifecycle.md)
 - [Phase 10 — Notifications & Background Jobs](phase-10-notifications-background-jobs.md)
 - [Phase 11 — Frontend Foundation](phase-11-frontend-foundation.md)
+- [Phase 12 — Student UI](phase-12-student-ui.md)
 
 ## Project Principles
 
