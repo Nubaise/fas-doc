@@ -1,4 +1,4 @@
-﻿# FAS - Faculty Appointment System
+# FAS - Faculty Appointment System
 
 Documentation repository for the Faculty Appointment System (FAS).
 
@@ -46,20 +46,20 @@ FAS is a web-based system that allows students to request appointments with facu
 
 ## Technology Stack
 
-| Layer          | Technology                         |
-| -------------- | ---------------------------------- |
-| Frontend       | React + TypeScript                 |
-| Backend        | NestJS + TypeScript + Node.js      |
-| API            | REST + OpenAPI                     |
-| Database       | PostgreSQL                         |
-| ORM            | TypeORM                            |
-| Authentication | JWT                                |
-| Authorization  | RBAC                               |
-| Notifications  | Transactional email + durable jobs |
-| Worker         | Independent background worker      |
-| Deployment     | Docker + managed hosting           |
-| Infrastructure | Terraform/OpenTofu                 |
-| CI/CD          | Managed CI/CD                      |
+| Layer | Technology |
+| --- | --- |
+| Frontend | React + TypeScript |
+| Backend | NestJS + TypeScript + Node.js |
+| API | REST + OpenAPI |
+| Database | PostgreSQL |
+| ORM | TypeORM |
+| Authentication | JWT |
+| Authorization | RBAC |
+| Notifications | Transactional email + durable jobs |
+| Worker | Independent background worker |
+| Deployment | Docker + managed hosting |
+| Infrastructure | Terraform/OpenTofu |
+| CI/CD | Managed CI/CD |
 
 ## Development Plan
 
@@ -101,6 +101,7 @@ FAS is a web-based system that allows students to request appointments with facu
 - [Phase 12 - Student UI](phase-12-student-ui.md)
 - [Phase 13 - Faculty UI](phase-13-faculty-ui.md)
 - [Phase 14 - Admin UI](phase-14-admin-ui.md)
+- [Phase 15 - UI/UX Refinement & Design System Polish](phase-15-ui-ux-refinement.md)
 
 ## Project Principles
 
@@ -110,12 +111,40 @@ FAS is a web-based system that allows students to request appointments with facu
 - Appointment conflicts are protected at the database level.
 - Notifications are processed asynchronously.
 - APIs are versioned under `/api/v1`.
+- Frontend design prioritizes clarity, accessibility, responsiveness, and consistent interaction patterns.
+- UI improvements must preserve existing backend contracts and business rules.
+- Future extensibility should be supported without implementing unsupported functionality prematurely.
 
 ## Project Status
 
-**Phase 14 - Admin UI: Completed**
+**Phase 15 - UI/UX Refinement & Design System Polish: Completed**
 
-The project is currently progressing through the 21-phase development plan.
+Phase 15 completed the major frontend UI/UX refinement pass across the Student, Faculty, and Admin experiences.
+
+The frontend was reviewed and refined for:
+
+- Visual hierarchy and spacing.
+- Responsive behavior.
+- Light and dark themes.
+- Shared design-system consistency.
+- Buttons, inputs, labels, separators, and skeleton states.
+- Loading, empty, error, and success states.
+- Appointment flows.
+- Faculty discovery and scheduling.
+- Faculty availability management.
+- Admin management interfaces.
+- Dialog and confirmation interactions.
+- Hover, focus, pressed, disabled, and loading states.
+- Accessible interaction patterns.
+- Cal.com-inspired scheduling quality while retaining FAS functionality and identity.
+
+Phase 15 implementation was committed and pushed in:
+
+`492eb43 - feat: refine frontend UI and UX`
+
+The project is currently progressing to:
+
+**Phase 16 - Validation, Security & Error Handling**
 
 Development follows:
 
