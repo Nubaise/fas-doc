@@ -100,6 +100,7 @@ FAS is a web-based system that allows students to request appointments with facu
 - [Phase 11 - Frontend Foundation](phase-11-frontend-foundation.md)
 - [Phase 12 - Student UI](phase-12-student-ui.md)
 - [Phase 13 - Faculty UI](phase-13-faculty-ui.md)
+- [Phase 14 - Admin UI](phase-14-admin-ui.md)
 
 ## Project Principles
 
@@ -112,11 +113,10 @@ FAS is a web-based system that allows students to request appointments with facu
 
 ## Project Status
 
-**Phase 13 - Faculty UI: Completed**
+**Phase 14 - Admin UI: Completed**
 
 The project is currently progressing through the 21-phase development plan.
 
 Development follows:
 
-**PLAN ? DESIGN ? IMPLEMENT ? TEST ? REVIEW ? DOCUMENT ? COMMIT/PUSH ? NEXT PHASE**
-
+**PLAN → DESIGN → IMPLEMENT → TEST → REVIEW → DOCUMENT → COMMIT/PUSH → NEXT PHASE**
